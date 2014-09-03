@@ -8,10 +8,10 @@ message_raw = File.read('build/index.html')
 message = <<-END.split("\n").map!(&:strip).join("\n")
 Content-Type: multipart/alternative; boundary="Apple-Mail=_CF186DE0-9DA3-4AD6-9D1B-7D9499A8A1D0"
 Date: Sat, 21 Jun 2014 19:07:24 +0300
-Message-Id: <0BF9EE79-6259-4AFA-890F-63CF2ACA6D2A@gmail.com>
+Message-Id: <0BF9EE79-6259-4AFA-890F-63CF2ACA6#{Random.rand(11000)}@gmail.com>
 From: Ira <i.v@rw.rw>
 To: Ira <i.v@rw.rw>
-Subject: Mailtrap
+Subject: Mailtrap #{Random.rand(11000)} for testing #{Random.rand(11000)}
 Mime-Version: 1.0 (Mac OS X Mail 7.3 \(1878.2\))
 X-Mailer: Apple Mail (2.1878.2)
 
