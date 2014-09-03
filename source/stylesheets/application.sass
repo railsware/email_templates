@@ -1,0 +1,191 @@
+body, #bodyTable, #bodyCell
+  height: 100% !important
+  margin: 0
+  padding: 0
+  width: 100% !important
+
+table
+  border-collapse: collapse
+
+img, a img
+  border: 0
+  outline: none
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+p
+  margin: 1em 0 1.5em
+
+a
+  color: #313a45
+  text-decoration: none
+
+.ReadMsgBody
+  width: 100%
+
+.ExternalClass
+  width: 100%
+  p, span, font, td, div, p, span, font, td, div
+    line-height: 100%
+
+table, td
+  mso-table-lspace: 0pt
+  mso-table-rspace: 0pt
+
+#outlook a
+  padding: 0
+
+img
+  -ms-interpolation-mode: bicubic
+
+body, table, td, p, a, li, blockquote
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+body
+  background: #ebebeb url("http://static.sendgrid.com/uploads/UID_94429_NL_3083251_6b375150cad9f6c64caaa64a5710d8ce/ecd03163d3b85074c4440513dd6bfcf3") top left repeat
+
+#bodyTable
+  font: normal 14px / 22px "Open Sans", Arial, sans-serif
+  color: #313a45
+
+#bodyCell
+  padding: 50px 25px 10px
+
+.main
+  width: 600px
+  border-radius: 10px
+  box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.16)
+  background-color: white
+  .header
+    background-color: #313945
+    border-radius: 9px 9px 0 0
+    padding: 0 30px
+    img
+      vertical-align: middle
+  .intro img
+    width: 600px
+    height: 365px
+  .feedback
+    padding: 40px 20px 100px
+    font-size: 16px
+    p
+      margin-bottom: 40px
+    h1
+      font-size: 28px
+      line-height: 40px
+      font-weight: normal
+    .feedback-btn
+      width: 335px
+    .feedback-btn-content
+      border-radius: 35px
+      background-color: #00c9c9
+      padding: 25px
+      a
+        display: block
+        font-size: 23px
+        color: white
+
+.promo
+  background-color: #313945
+  color: #e6e5eb
+  padding: 11px
+  border-radius: 0 0 9px 9px
+  a
+    color: #00caca
+
+.social
+  width: 600px
+
+.social-content
+  padding: 20px 0
+
+.social-btns
+  .col-left, .col-right
+    width: 50%
+  .col-left
+    padding-right: 10px
+  .col-right
+    padding-left: 10px
+  .btn-box
+    border-collapse: separate
+    border-radius: 5px
+    background-color: white
+    box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.16)
+  .twitter-btn, .facebook-btn
+    padding: 15px
+    border-radius: 5px
+  .twitter-btn a, .facebook-btn a
+    display: block
+    font-weight: bold
+  .twitter-btn
+    border-top: 4px solid #0cbaf2
+  .facebook-btn
+    border-top: 4px solid #3857a3
+  img
+    vertical-align: middle
+    padding-right: 10px
+
+.footer
+  width: 600px
+  .closing
+    color: #919191
+
+/*////// Mobile //////
+@media only screen and (max-width: 480px)
+  /*////// CLIENT-SPECIFIC STYLES //////
+  body
+    width: 100% !important
+    min-width: 100% !important
+    -webkit-text-size-adjust: none !important
+  /* Force iOS Mail to render the email at full width.
+  /*////// RESET STYLES //////
+  table, td, p, a
+    -webkit-text-size-adjust: none !important
+  p
+    margin: 1em 0 !important
+  span[class=mobile-off]
+    display: none !important
+  body
+    width: 100% !important
+    min-width: 100% !important
+  table
+    &[id=bodyTable], &[class=main], &[class=social], &[class=footer]
+      max-width: 600px !important
+      width: 100% !important
+    &[id=bodyTable]
+      font-size: 16px !important
+  td
+    &[id="bodyCell"]
+      padding: 10px !important
+    &[class="feedback"]
+      padding: 20px 20px 60px !important
+  table[class=feedback-btn]
+    width: 85% !important
+  .intro img[class=intro-img]
+    width: 100% !important
+    height: auto !important
+  table[class=social-btns]
+    width: 100% !important
+    span[class=mobile-off]
+      display: none !important
+
+@media only screen and (max-width: 320px)
+  table
+    &[class=btn-box]
+      width: 100% !important
+    &[class=social-btns] td
+      &[class=col-left], &[class=col-right]
+        width: 100% !important
+        display: block !important
+        padding: 0 0 10px !important
+    &[class=feedback-btn]
+      width: 100% !important
+      td[class=feedback-btn-content]
+        padding: 20px 5px !important
+        a
+          line-height: 1.25 !important
+          font-size: 20px !important

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!-- If you delete this tag, the sky will fall on your head -->
+  <meta name="viewport" content="width=device-width" />
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>ZURBemails</title>
+
+  <%= stylesheet_link_tag "application", media: 'all' %>
+</head>
+  <body>
+  	<center>
+    	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" background="http://static.sendgrid.com/uploads/UID_94429_NL_3083251_6b375150cad9f6c64caaa64a5710d8ce/ecd03163d3b85074c4440513dd6bfcf3" id="bodyTable">
+      	<tr>
+        	<td align="center" valign="top" id="bodyCell">
+          	<!-- // BEGIN EMAIL -->
+              <%= yield%>
+            <!-- END EMAIL // -->
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
