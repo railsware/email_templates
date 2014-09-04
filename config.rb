@@ -61,7 +61,7 @@ module PreMailer
         prefix = build_dir + File::SEPARATOR
         Dir.chdir(build_dir) do
           Dir.glob('**/*.html') do |file|
-            premailer = Premailer.new(file, warn_level: Premailer::Warnings::SAFE, adapter: :nokogiri, preserve_styles: false, remove_classes: true, remove_comments: true, remove_ids: true, remove_scripts: true, include_link_tags: true, include_style_tags: true)
+            premailer = Premailer.new(file, warn_level: Premailer::Warnings::SAFE, adapter: :nokogiri, preserve_styles: false, remove_scripts: true, include_link_tags: true, include_style_tags: true)
             fileout = File.open(file, "w")
             fileout.puts premailer.to_inline_css
             fileout.close
