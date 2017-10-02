@@ -16,17 +16,20 @@ img, a img
 img
   width: auto
   max-width: 100%
+  display: block
 
 h1, h2, h3, h4, h5, h6
   margin: 0
   padding: 0
 
 p
-  margin: 1em 0 1.5em
+  margin: 0
 
 a
-  color: #313a45
+  color: #00b2b2
   text-decoration: none
+  &:hover, &:active, &:visited
+    color: #009999 !important
 
 //// CLIENT-SPECIFIC STYLES
 // Force Hotmail/Outlook.com to display emails at full width.
@@ -58,139 +61,277 @@ body, table, td, p, a, li, blockquote
   -webkit-text-size-adjust: 100%
 
 //// GENERAL STYLES
-body
-  background: #ebebeb url("http://static.sendgrid.com/uploads/UID_94429_NL_3090959_43b3b951a3b5fe398e984004d8b671bd/ea81edd09ea12abbd0cdb7064a4d4b8b") top left repeat
-
-#bodyTable
-  font: normal 14px / 22px "Open Sans", Arial, sans-serif
+// Type
+body, #bodyTable
+  font-family: "Open Sans", Arial, sans-serif
+  font-size: 16px
+  font-weight: normal
+  line-height: 1.4
   color: #313a45
 
+h1
+  font-size: 30px
+  font-weight: 400
+  line-height: 1.24
+
+h3
+  margin-bottom: 15px
+  font-size: 16px
+  font-weight: 600
+  line-height: 1.4
+
+.text-small
+  font-size: 12px
+
+.text-muted
+  color: #ccc
+
+// Spaces
+.pbn
+  padding-bottom: 0 !important
+
+.pbs
+  padding-bottom: 20px
+
+.ptm
+  padding-top: 40px
+
+// Grid
+.column
+  width: 50%
+  &.left
+    padding-right: 20px
+    &.is-wider
+      padding-right: 10px
+  &.right
+    padding-left: 20px
+    &.is-wider
+      padding-left: 10px
+  &.is-full
+    padding: 0
+  &.is-spaced
+    padding-top: 35px
+    padding-right: 40px
+    padding-left: 40px
+    padding-bottom: 35px
+
+// Helpers
+.is-rounded
+  border-radius: 3px
+
+// Layout
+body,#bodyTable
+  background-color: #f4f4f4
+
 #bodyCell
-  padding: 50px 25px 10px
+  padding: 50px 10px 10px
+
+.content-block
+  padding-top: 40px
+  padding-right: 60px
+  padding-left: 60px
+  padding-bottom: 40px
+  &.with-border
+    padding-top: 40px
+    padding-right: 15px
+    padding-bottom: 0
+    padding-left: 15px
+    .content-block-inner
+      padding-top: 0
+      padding-right: 45px
+      padding-bottom: 40px
+      padding-left: 45px
+      &.is-bordered
+        border-bottom: 2px solid #ccc
+
+  &.is-full
+    padding: 0
+
+  &.is-muted
+    background-color: #f8f8f8
+
+  &.is-primary
+    background-color: #00aaab
+    color: #fff
+    td
+      color: #fff
+
+  &.has-light-pointer--small
+    background-image: url("https://dl.dropboxusercontent.com/u/7643860/mailtrap/Mailtrap/email_template_assets/pointer-white-small.png")
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: 119px 30px
+
+  &.has-light-pointer--big
+    background-image: url("https://dl.dropboxusercontent.com/u/7643860/mailtrap/Mailtrap/email_template_assets/pointer-white-big.png")
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: 169px 42px
+    padding-top: 60px
+    padding-bottom: 60px
+
+  &.has-muted-pointer
+    background-image: url("https://dl.dropboxusercontent.com/u/7643860/mailtrap/Mailtrap/email_template_assets/pointer-gray.png")
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: 119px 30px
+
+.content-block-inner
+  padding-top: 40px
+  padding-left: 60px
+  padding-right: 60px
+  padding-bottom: 40px
+
+.content-item
+  padding-bottom: 25px
+
+.box
+  padding: 10px
+  border-radius: 6px
+  background-color: #fff
+  box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.16)
 
 .main
-  width: 600px
   border-radius: 10px
   box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.16)
-  background-color: white
-  .header
-    background-color: #313945
-    border-radius: 9px 9px 0 0
-    padding: 0 30px
-    img
-      vertical-align: middle
-  .feedback
-    padding: 40px 20px 100px
-    font-size: 16px
-    p
-      margin-bottom: 40px
-    h1
-      font-size: 28px
-      line-height: 40px
-      font-weight: normal
-    .feedback-btn
-      width: 335px
-    .feedback-btn-content
-      border-radius: 35px
-      background-color: #00c9c9
-      padding: 25px
-      a
-        display: block
-        font-size: 23px
-        color: white
+  background-color: #fff
 
-.promo
+.header
   background-color: #313945
-  color: #e6e5eb
-  padding: 11px
-  border-radius: 0 0 9px 9px
-  a
-    color: #00caca
+  border-radius: 9px 9px 0 0
+  padding: 0 30px
 
-.social
-  width: 600px
-
-.social-content
-  padding: 20px 0
-
-.social-btns
-  .col-left, .col-right
-    width: 50%
-  .col-left
-    padding-right: 10px
-  .col-right
-    padding-left: 10px
-  .btn-box
-    border-collapse: separate
-    border-radius: 5px
-    background-color: white
-    box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.16)
-  .twitter-btn, .facebook-btn
-    padding: 15px
-    border-radius: 5px
-  .twitter-btn a, .facebook-btn a
-    display: block
-    font-weight: bold
-  .twitter-btn
-    border-top: 4px solid #0cbaf2
-  .facebook-btn
-    border-top: 4px solid #3857a3
   img
     vertical-align: middle
-    padding-right: 10px
 
 .footer
-  width: 600px
-  .closing
-    color: #919191
+  border-top: 2px solid #ccc
+  padding-top: 30px
+  padding-bottom: 30px
 
-//// RESPONSIVE
+.media-info
+  padding-top: 5px
+  .image
+    padding-right: 10px
+
+.promo-block
+  padding-top: 275px
+  background-image: url("https://dl.dropboxusercontent.com/u/7643860/mailtrap/Mailtrap/email_template_assets/email-img-5.jpg")
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: 580px 480px
+  background-color: #0e155b
+  color: #fff
+  td
+    color: #fff
+
+.promo-block-small
+  padding: 25px
+  background-image: url("https://dl.dropboxusercontent.com/u/7643860/mailtrap/Mailtrap/email_template_assets/email-img-6.jpg")
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: 289px 265px
+  background-color: #0e155b
+  color: #fff
+
+//Buttons
+.btn
+  border-collapse: separate
+  .btn-content
+    border: 2px solid transparent
+    border-radius: 3px
+    background-color: #00c9c9
+    padding: 5px 30px
+    color: #fff
+  a
+    display: block
+    font-size: 16px
+    color: #fff !important
+    &:hover, &:active, &:visited
+      color: #fff !important
+
+  &.is-big
+    .btn-content
+      font-size: 23px
+      font-style: italic
+      padding: 10px 30px
+    a
+      font-size: 23px
+      font-style: italic
+
+  &.is-promo
+    .btn-content
+      border-radius: 36px
+      padding: 18px 40px
+      font-size: 23px
+      font-style: italic
+    a
+      font-size: 23px
+      font-style: italic
+
+  &.is-plain
+    .btn-content
+      border: 2px solid #fff
+      background-color: transparent
+
+  &.is-light
+    .btn-content
+      color: #00b2b2
+      background-color: #fff
+    a
+      color: #00b2b2 !important
+      &:hover, &:active, &:visited
+        color: #009999 !important
+
+// Media Queries
 @media only screen and (max-width: 600px)
   body
     width: 100% !important
     min-width: 100% !important
   body,table,td,p,a,li,blockquote
     -webkit-text-size-adjust: none !important
-  p
-    margin: 1em 0 !important
-  span[class="mobile-off"]
-    display: none !important
-  body
+  table
+    max-width: 580px !important
     width: 100% !important
-    min-width: 100% !important
-  table[id="bodyTable"],
-  table[class="main"],
-  table[class="social"],
-  table[class="footer"]
-    max-width: 600px !important
+  #bodyCell
+    padding: 15px !important
+  .column
+    display: block !important
     width: 100% !important
-
-  table[id="bodyTable"]
-    font-size: 16px !important
-  td[id="bodyCell"]
-    padding: 10px !important
-  td[class="feedback"]
-    padding: 20px 20px 60px !important
-  table[class="feedback-btn"]
-    width: 90% !important
-    td[class="feedback-btn-content"]
-      padding: 20px 5px !important
-      a
-        line-height: 1.25 !important
-        font-size: 20px !important
-  .intro
-    img[class="intro-img"]
-      width: auto !important
-      height: auto !important
-  table[class="social-btns"]
+    padding: 0 0 20px !important
+    box-sizing: border-box
+  .column:last-child:not(.is-spaced)
+    padding-bottom: 0 !important
+  .content-block,
+  .content-block-inner,
+  .promo-block-small,
+  .column.is-spaced
+    padding: 30px !important
+  .content-block.with-border
+    padding-left: 10px !important
+    padding-right: 10px !important
+    padding-bottom: 0 !important
+  .content-block-inner.is-bordered
+    padding: 0 20px 30px !important
+  .content-block.is-full
+    padding: 0 !important
+  .content-block.has-light-pointer--big
+    padding-top: 60px !important
+  .is-fittogrid
     width: 100% !important
-
-@media only screen and (max-width: 320px)
-  table[class="btn-box"]
-    width: 100% !important
-  table[class="social-btns"]
-    td[class="col-left"],
-    td[class="col-right"]
-      width: 100% !important
-      display: block !important
-      padding: 0 0 10px !important
+    height: auto !important
+  .btn.is-big .btn-content,
+  .btn.is-promo .btn-content
+    padding: 10px 15px !important
+  .btn.is-big .btn-content a,
+  .btn.is-promo .btn-content a
+    font-size: 20px !important
+  .media-info table
+    width: auto !important
+  .promo-block,
+  .promo-block-small
+    background-size: cover !important
+  .promo-block-small
+    background-position: center 40% !important
+  .promo-block
+    padding-top: 275px !important
