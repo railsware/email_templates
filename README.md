@@ -8,6 +8,8 @@ With its help you can:
 - send email template to your Mialtrap account and than to any other email client for testing.
 
 Commands:
-`middleman server`
-`middleman build'
-`ruby send_email.rb  {mailtrap inbox login} {mailtrap inbox password}`
+```
+middleman server
+middleman build
+ruby send_email.rb  {mailtrap inbox login} {mailtrap inbox password}
+```
